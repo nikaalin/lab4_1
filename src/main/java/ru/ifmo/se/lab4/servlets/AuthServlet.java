@@ -1,5 +1,6 @@
 package ru.ifmo.se.lab4.servlets;
 
+import org.json.JSONObject;
 import ru.ifmo.se.lab4.ejb.AuthBean;
 
 import javax.ejb.EJB;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(
         name = "AuthServlet",
@@ -20,15 +22,25 @@ public class AuthServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("application/json");//Отправляем от сервера данные в JSON -формате
-        response.setCharacterEncoding("utf-8");//Кодировка отправляемых данных
-        try  {
-//            PrintWriter out = response.getWriter();
-//            JSONObject jsonEnt = new JSONObject();
+        try {
+
             String login = request.getParameter("login");
             String password = request.getParameter("password");
-            authBean.userExist(login, password.getBytes(), new byte[10]);
-            request.getServletContext().getRequestDispatcher("/area1.jsp").forward(request, response);
+
+            JSONObject jsonEnt = new JSONObject();
+           // jsonEnt.append("answer", authBean.userExist("1","1".getBytes(), new byte[10]));
+
+//            response.setContentType("application/json");
+//            response.setCharacterEncoding("UTF-8");
+//            response.getWriter().write(jsonEnt.toString());
+
+//            if(authBean.userExist(login, password.getBytes(), new byte[10])){
+                request.getServletContext().getRequestDispatcher("/area1.jsp").forward(request, response);
+//            }else{
+//                request.getServletContext().getRequestDispatcher("/auth_error1.jsp").forward(request, response);
+//            }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

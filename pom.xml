@@ -49,6 +49,11 @@
       <artifactId>postgresql</artifactId>
       <version>42.2.5</version>
     </dependency>
+      <dependency>
+          <groupId>org.json</groupId>
+          <artifactId>org.json</artifactId>
+          <version>chargebee-1.0</version>
+      </dependency>
   </dependencies>
 
   <build>

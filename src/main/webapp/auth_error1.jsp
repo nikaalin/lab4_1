@@ -2,13 +2,13 @@
   Created by IntelliJ IDEA.
   User: al
   Date: 23.01.2019
-  Time: 17:52
+  Time: 21:05
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>Welcome</title>
+    <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -37,11 +37,11 @@
     <tr id="auth_form">
         <td></td>
         <td >
-            <form method="post" class="div" action="login">
+            <form method="post" class="div" action="AuthServlet">
                 <label for="login">Логин: </label><input type="text" id="login" name="LOGIN"><br>
                 <label for="password">Пароль: </label><input type="password" id="password" name="PASSWORD"><br>
                 <input type="submit" id="button" value="OK">
-                <div class="errMsg" id="errMsg"></div>
+                <div class="errMsg" id="errMsg">Неверное имя пользователя и/или пароль</div>
             </form>
         </td>
         <td></td>
