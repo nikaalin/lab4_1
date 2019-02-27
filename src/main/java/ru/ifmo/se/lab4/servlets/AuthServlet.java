@@ -28,12 +28,12 @@ public class AuthServlet extends HttpServlet {
             String password = request.getParameter("password");
 
             JSONObject jsonEnt = new JSONObject();
-            jsonEnt.append("answer", "false");
+            jsonEnt.append("answer", "true");
 
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             response.getWriter().write(jsonEnt.toString());
-            //111
+
 
 
 //            if(authBean.userExist("1", "1")){

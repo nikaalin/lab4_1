@@ -1,0 +1,122 @@
+body {
+    background-color: #2e2d2d;
+    /*background-image: url("/img/img0.png");*/
+    position: relative;
+    text-align: center;
+}
+[type = "submit"],[type = "button"], button{
+    border-radius: 25px;
+    font: 16px Arial;
+    margin-outside: 10px;
+
+    text-align: center;
+    padding: 10px 30px;
+    border: groove 4px saddlebrown;
+    font-weight: bold;
+    color: #f7f7f7;
+    background-color: rosybrown;
+    text-shadow: 1px 2px 4px #2e2d2d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#app{
+    position: relative;
+}
+#form{
+    position: relative;
+    top: 10vh;
+    left: 10vw;
+
+    background: mintcream;
+    max-width: 80%;
+
+    border-radius: 25px;
+    border: groove 4px saddlebrown;
+}
+#myForm {
+    /*float: left;*/
+    /*padding-top: 10%;*/
+    font-family: arial;
+    font-size: 20pt;
+    text-align: center;
+    /*display: inline;*/
+    /*min-width: 40%;*/
+    /*min-height: 50%;*/
+    /*position: absolute;*/
+    top: 18vh;
+    left: 3vw;
+
+}
+#graph {
+    /*float: left;*/
+    background: aliceblue;
+    border-radius: 25px;
+    border: groove 4px darkcyan;
+
+}
+#left_part{
+    position: relative;
+    width: 50%;
+    margin: 5px;
+}
+#right_part {
+    position: relative;
+    /*padding-top: 3%;*/
+    /*padding-right: 5%;*/
+    text-align: center;
+    width: 50%;
+    /*position: absolute;*/
+    /*top: 8vh;*/
+    /*right: 3vw;*/
+    margin: 5px;
+
+
+}
+
+#table {
+    position: relative;
+    top: 10vh;
+    left: 10vw;
+
+    background: mintcream;
+    width: 80%;
+
+    border-radius: 25px;
+    border: groove 4px saddlebrown;
+
+    font-size: 20pt;
+    text-align: center;
+
+    text-align-all: center;
+    border-collapse: collapse;
+    color: #2e2d2d;
+}
+
+#table td {
+    padding: 5px;
+    border: 1px solid #2e2d2d;
+}
+
+#authors, #key, #auth_form{
+    font-family: Arial;
+    font-size: 25px;
+}
+#auth_form{
+    text-align: center;
+    padding-top: 5%;
+}
+.div{
+    color: antiquewhite;
+    background-color: #6C4141;
+    border-radius: 25px;
+}
+#authors td{
+    text-align: center;
+    border-collapse: collapse;
+}
+.errMsg{
+    font-family: "Book Antiqua";
+    font-size: 15pt;
+    color: crimson;
+}
+
