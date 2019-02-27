@@ -13,7 +13,7 @@ $(document).ready(function () {
             },
             success: function (e) {
                    if (e == "true") {
-                       alert("1")
+                       document.getElementById("main_form").submit()
                    } else {
                        document.getElementById('errMsg').innerText = "Неверное имя пользователя и/или пароль";
                        document.getElementById('errMsg').visibility = "visible";

@@ -37,7 +37,7 @@
     <tr id="auth_form">
         <td></td>
         <td >
-            <form method="post" class="div" action="login">
+            <form method="post" class="div" action="main" id="main_form">
                 <label for="login">Логин: </label><input type="text" id="login" name="LOGIN"><br>
                 <label for="password">Пароль: </label><input type="password" id="password" name="PASSWORD"><br>
                 <input type="button" id="button" value="OK">
