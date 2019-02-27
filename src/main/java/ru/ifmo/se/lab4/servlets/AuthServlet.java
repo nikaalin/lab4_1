@@ -33,6 +33,7 @@ public class AuthServlet extends HttpServlet {
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             response.getWriter().write(jsonEnt.toString());
+            //111
 
 
 //            if(authBean.userExist("1", "1")){
