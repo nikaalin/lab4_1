@@ -27,20 +27,14 @@ public class AuthServlet extends HttpServlet {
             String login = request.getParameter("login");
             String password = request.getParameter("password");
 
-            JSONObject jsonEnt = new JSONObject();
-            jsonEnt.append("answer", "true");
+            Boolean answer = authBean.userExist(login, password);
 
-            response.setContentType("application/json");
+
             response.setCharacterEncoding("UTF-8");
-            response.getWriter().write(jsonEnt.toString());
+            response.getWriter().write(answer.toString());
 
 
 
-//            if(authBean.userExist("1", "1")){
-//                request.getServletContext().getRequestDispatcher("/area1.jsp").forward(request, response);
-//            }else{
-//                request.getServletContext().getRequestDispatcher("/auth_error1.jsp").forward(request, response);
-//            }
 
 
         } catch (Exception e) {

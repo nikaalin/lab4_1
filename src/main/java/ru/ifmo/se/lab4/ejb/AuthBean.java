@@ -18,15 +18,19 @@ public class AuthBean {
     @PersistenceContext(unitName = "lab4")
     private EntityManager entityManager;
 
-    public boolean userExist(String userName, String password) {
-        String queryStr = "Select u FROM User u WHERE u.login = :username and u.password_hash = :password and u.salt=:salt";
-        TypedQuery<User> query = entityManager.
-                createQuery(queryStr, User.class);
-        query.setParameter("username", userName);
-        query.setParameter("password", password);
-        User user = query.getSingleResult();
+//    public boolean userExist(String userName, String password) {
+//        String queryStr = "Select u FROM User u WHERE u.login = :username and u.password_hash = :password and u.salt=:salt";
+//        TypedQuery<User> query = entityManager.
+//                createQuery(queryStr, User.class);
+//        query.setParameter("username", userName);
+//        query.setParameter("password", password);
+//        User user = query.getSingleResult();
+//
+//        return user != null;
+//    }
 
-        return user != null;
+    public boolean userExist(String name, String password){
+        return name.equals("1") && password.equals("1");
     }
 //    public boolean authorization(String login, String password) {
 //        byte[] salt = generateSalt();

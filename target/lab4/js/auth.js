@@ -12,13 +12,13 @@ $(document).ready(function () {
                 document.getElementById("errMsg").visibility = "visible";
             },
             success: function (e) {
-                if (data.login == '1' && data.password == '1'){
-                    (alert("1212"));
-                }
-                else {
-                    document.getElementById('errMsg').innerText = "Неверное имя пользователя и/или пароль";
-                    document.getElementById('errMsg').visibility = "visible";
-                }
+                   if (e == "true") {
+                       alert("1")
+                   } else {
+                       document.getElementById('errMsg').innerText = "Неверное имя пользователя и/или пароль";
+                       document.getElementById('errMsg').visibility = "visible";
+                   }
+
             }
 
 
