@@ -40,7 +40,7 @@
             <form method="post" class="div" action="login">
                 <label for="login">Логин: </label><input type="text" id="login" name="LOGIN"><br>
                 <label for="password">Пароль: </label><input type="password" id="password" name="PASSWORD"><br>
-                <input type="submit" id="button" value="OK">
+                <input type="button" id="button" value="OK">
                 <div class="errMsg" id="errMsg"></div>
             </form>
         </td>
