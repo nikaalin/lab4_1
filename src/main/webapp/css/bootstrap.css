@@ -1,0 +1,29 @@
+body {
+    background-color: azure;
+}
+
+#left_part
+{
+    background-color: white;
+    margin-bottom: 20px;
+}
+#myForm
+{
+    margin-top: 20px;
+}
+#right_part
+{
+    background-color: white;
+
+}
+#table
+{
+    margin-top: 20px;
+    overflow: scroll;
+    height: 653px; !important;
+    background-color: white;
+}
+/*.btn
+{
+    background-color: azure;
+}*/
