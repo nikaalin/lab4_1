@@ -20,7 +20,15 @@ body {
 {
     margin-top: 20px;
     overflow: scroll;
-    height: 653px; !important;
+    height: 636px; !important;
     background-color: white;
+}
+#first_div
+{
+    padding-top: 20px;
+}
+.custom
+{
+    width: 60px;
 }
 

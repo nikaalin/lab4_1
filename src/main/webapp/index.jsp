@@ -14,39 +14,44 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/auth.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/table.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
 </head>
-<body>
-<table width="100%" height="100%">
 
-    <tr id="authors" height="13%" class="div">
-        <td width="25%"> вариант 18155 <br>
-            группа P3201
-        </td>
-        <td>
-            Балахонов Ярослав Ильич<br>
-            Николаенкова Алина Алексеевна
-        </td>
-        <td width="25%">
-            Логин: 1<br>
+<div class="container h-100">
+    <div class="row" id="first_div">
+        <div class="col-md-3 mr-0.5  border rounded bg-white border-primary" >
+            <h4  class="text-center"> Вариант 18155 <br>
+                Группа P3201
+            </h4>
+        </div>
+        <div class="col-md-6 ml-0.5 mr-0.5 border border-primary rounded bg-white">
+            <h4 class="text-center">Балахонов Ярослав Ильич<br>
+            Николаенкова Алина Алексеевнa
+            </h4>
+        </div>
+        <div class="col-md-3 ml-0.5 border rounded bg-white border-primary">
+            <h4 class="text-center">Логин: 1<br>
             Пароль: 1
-        </td>
+            </h4>
+        </div>
+    </div>
 
 
-    </tr>
-    <tr id="auth_form">
-        <td></td>
-        <td >
+    <div class="row justify-content-center align-items-center h-75" id="auth_form">
+
+        <div class="col-md-12 text-center">
             <form method="post" class="div" action="main" id="main_form">
-                <label for="login">Логин: </label><input type="text" id="login" name="LOGIN"><br>
-                <label for="password">Пароль: </label><input type="password" id="password" name="PASSWORD"><br>
-                <input type="button" id="button" value="OK">
-                <div class="errMsg" id="errMsg"></div>
+                <label for="login" >Логин:  </label><input class="border rounded bg-white border-primary" type="text" id="login" name="LOGIN"><br>
+                <label for="password" >Пароль: </label><input type="password" class="border rounded bg-white border-primary" id="password" name="PASSWORD"><br>
+                <input class="btn-primary border rounded custom" type="button" id="button" value="Вход">
+                <div class="errMsg text-danger" id="errMsg"></div>
             </form>
-        </td>
-        <td></td>
-    </tr>
-</table>
+        </div>
+    </div>
+</div>
 
 </body>
+
 </html>

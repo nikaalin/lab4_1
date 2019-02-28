@@ -76,6 +76,9 @@
                 }
             });
         draw('graph', 0);
+        document.getElementById('y').innerHTML="<label>Y\n" +
+            "                <input v-model=\"yValue\" name=\"yRadio\" class=\"border-primary rounded\" id=\"YText\" onkeydown = \"validateY()\" placeholder=\"(-3;3)\">\n" +
+            "            </label>"
         }
 
     </script>
@@ -119,9 +122,7 @@
             </label>
         </div>
         <div id="y" class="mx-auto center-block text-center">
-            <label>Y
-                <input v-model="yValue" name="yRadio" class="border-primary rounded" id="YText" onkeydown = "validateY()">
-            </label>
+
 
         </div>
         <div id="r" class=" mx-auto center-block text-center " data-toggle="buttons">
