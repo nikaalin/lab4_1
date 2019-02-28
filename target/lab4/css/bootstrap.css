@@ -16,6 +16,9 @@ body {
     background-color: white;
 
 }
+#button_info{
+    color: crimson;
+}
 #table
 {
     margin-top: 20px;

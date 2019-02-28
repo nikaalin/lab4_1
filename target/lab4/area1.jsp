@@ -5,8 +5,7 @@
   Time: 17:54
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.List" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -94,7 +93,7 @@
         <div class=" mx-auto center-block text-center"   id="x" data-toggle="buttons">
             X
             <label class="btn btn-primary">
-                <input type="radio" name="xRadio" style="display: none;" id="option1" autocomplete="off" value =-5 v-model="x">-5
+                <input type="radio" name="xRadio"  id="option1" autocomplete="off" value =-5 v-model="x">-5
             </label>
             <label class="btn btn-primary">
                 <input type="radio" name="xRadio"  id="option2" autocomplete="off" value =-4 v-model="x">-4

@@ -1,6 +1,5 @@
 package ru.ifmo.se.lab4.servlets;
 
-import org.json.JSONObject;
 import ru.ifmo.se.lab4.ejb.AuthBean;
 
 import javax.ejb.EJB;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(
         name = "AuthServlet",

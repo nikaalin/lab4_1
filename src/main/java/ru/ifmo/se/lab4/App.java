@@ -10,7 +10,6 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Request;
 
 //@Singleton
-//@ApplicationPath("/api")
 //@Path("/login")
 @DataSourceDefinition(name="java:app/PostgresDatasource",
         className = "org.postgresql.ds.PGConnectionPoolDataSource",

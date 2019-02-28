@@ -36,6 +36,13 @@
       <version>5.4.1.Final</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.4.1.Final</version>
+    </dependency>
+
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -49,11 +56,6 @@
       <artifactId>postgresql</artifactId>
       <version>42.2.5</version>
     </dependency>
-      <dependency>
-          <groupId>org.json</groupId>
-          <artifactId>org.json</artifactId>
-          <version>chargebee-1.0</version>
-      </dependency>
   </dependencies>
 
   <build>
